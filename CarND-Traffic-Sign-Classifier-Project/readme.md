@@ -6,4 +6,4 @@
 
 * Original  Dataset : https://d17h27t6h515a5.cloudfront.net/topher/2016/November/581faac4_traffic-signs-data/traffic-signs-data.zip
 
-* Augmented Dataset: This can be created from the iPython notebook itself. But, if you prefer to download it instead. Download from here. 
+* Augmented Dataset: This can be created from the iPython notebook itself. But, if you prefer to download it instead. Download from here ->  https://drive.google.com/file/d/0B2soUU2v1VdlSE5kUW8tR19qb2s/view?usp=sharing
