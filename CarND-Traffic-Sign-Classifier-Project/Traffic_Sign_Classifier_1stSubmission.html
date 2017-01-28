@@ -15750,15 +15750,10 @@ I chose quite iconic, and high clarity images to test the network. The network s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong></p>
-<ul>
-<li><p>Yes. The model performs well on the test images.
+<p><strong>Answer:</strong>
+Yes. The model performs well on the test images.
 As mentioned above, since the images are sort of iconic and of high clarity without much disturbences that could lead the network astray, the network performs well on each of them. 
 I collected the class id from the csv file and resused the evaluate code from above to calculate the accuracy.</p>
-</li>
-<li><p>I got an accuracy of 87.5% on the images acquired from internet. Well, since it is a small dataset, not much rigorous statistics can be defined on the results. But, it is interesting to note that, this accuracy of 87.5% is below the test accuracy (of 92.1%) obtained above. An argument for this would be, since the test and train datasets were originally obatined by splitting one dataset, it is possible that the model can overfit a bit, and this overfitting can percolate into the test dataset results. But, this set of images acquired from the internet, is similar to deploying your model into action in a practical scenario. Where, it is reasonable to expect that the results would be less accurate than the results on the testing datset (Any dataset, cannot capture every variation possible practically - but they are very good approximates!)</p>
-</li>
-</ul>
 
 </div>
 </div>
