@@ -1,5 +1,5 @@
 
-#**Behavrioal Cloning Project**
+#**Behavioral Cloning Project**
 
 The goals of this project are:
 * Obtain simulator data for good driving behavior, in terms of images and what a good steering angle is for that image. 
@@ -28,20 +28,20 @@ This project includes the following files:
 * drive.py for driving the car in autonomous mode
 * model.h5 containing a trained convolution neural network 
 * writeup_report.md summarizing the results
-* behavioral_cloning.ipynb which visulaizes the training in eye pleasing way!
+* behavioral_cloning.ipynb which visualizes the training in an eye pleasing way!
 
 
 ###Model Architecture and Training Strategy
 
 ####1. Model Architecture
 
-* My model uses the nVIDIA DAVE-2 architecture for this task of predicting steering values (paper). A summary of the model architecture is as below:
+* My model uses the nVIDIA DAVE-2 architecture for this task of predicting steering values [paper](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). A summary of the model architecture is as below:
 
 ![alt text][image1]
 
 ####2. Attempts to reduce overfitting in the model
 
-* Being true to the DAVE-2 architecture, I didn't use dropout layer to reduce overfitting to training data. Instead, The model was trained and validated on different data sets to ensure that the model was not overfitting. The classic observation of overfitting, where the training error continues to reduce beyond a certain training epoch, but the validation error starts shooting up was made and the epoch at which the validation error was the least was chosen as the final mode. this model was then tested by running it through the simulator and ensuring that the vehicle could stay on the track.
+* Being true to the DAVE-2 architecture, I didn't use dropout layer to reduce overfitting to training data. Instead, The model was trained and validated on different data sets to ensure that the model was not overfitting. The classic observation of overfitting - wherein the training error continues to reduce beyond a certain training epoch, but the validation error starts shooting up - was made and the epoch at which the validation error was the least was chosen as the final model. this model was then tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
 ####3. Model parameter tuning
 
@@ -60,4 +60,5 @@ This project includes the following files:
 
 ####5. Training
 
-* With the augmented data now covering all possible scenarios of staying on the track if driving correctly, and recovering to stay on the track if headed out of the track, The network was trained. Since, we don't use dropout layer, the data was split into training dataset and validation dataset after randomly rearranging the data (training works best if there is least correlation among successive examples). Using these datasets,a training epoch which produced the least validation error was chosen and the model was saved with the weights at the epoch. The trained model was tested on the simulator by driving the car autonomously using the model. The car succesfully passed the test by staying on the track for the entire duration of test time (4-5 laps)! The video recording of the autonomous run can be found in this repository!!
+* With the augmented data now covering all possible scenarios of staying on the track if driving correctly, and recovering to stay on the track if headed out of the track, The network was trained. The paper suggested certain preprocessing steps which were done in my implementation also. First is cropping the irrelevant parts of the image (which is top 1/3rd of the image and bottom 25 (approx.) pixels which removes the sky and bonnet of the car respectively (Both don't contribute to the learning process). Second, resize the images to 66x200 (height X width). Finally, one of the bestpractices of any NeuralNet training, the image data was normalized.
+* Since, we don't use dropout layer, the data was split into training dataset and validation dataset after randomly rearranging the data (training works best if there is least correlation among successive examples). Using these datasets,a training epoch which produced the least validation error was chosen and the model was saved with the weights at the epoch(which is 5 in my case). The trained model was tested on the simulator by driving the car autonomously using the model. The car succesfully passed the test by staying on the track for the entire duration of test time (4-5 laps)! The video recording of the autonomous run can be found in this repository!!
