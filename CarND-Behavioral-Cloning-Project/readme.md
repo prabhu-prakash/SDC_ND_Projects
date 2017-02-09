@@ -35,7 +35,7 @@ This project includes the following files:
 
 ####1. Model Architecture
 
-* My model uses the nVIDIA DAVE-2 architecture for this task of predicting steering values [paper](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). A summary of the model architecture is as below:
+* My model uses the [nVIDIA DAVE-2 architecture](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf for this task of predicting steering values. A summary of the model architecture is as below:
 
 ![alt text][image1]
 
