@@ -1,4 +1,6 @@
 
+![](./images/autonomousSteer.gif "Autonomous Steer")
+
 #**Behavioral Cloning Project**
 
 The goals of this project are:
