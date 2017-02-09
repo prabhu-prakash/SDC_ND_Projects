@@ -10,7 +10,7 @@ The goals of this project are:
 
 [//]: # (Image References)
 
-[image1]: ./images/model_architecture.png "Model Architecture"
+[image1]: ./images/model_architecture.png  "Model Architecture"
 
 
 ---
@@ -49,8 +49,14 @@ This project includes the following files:
 
 ####4. Data
 
-* Data was obtained from the simulator, by driving in the simulator to keep the car on the track! During training, the images were recorded with 3 cameras (center, left, and right) similar to exisiting practical self driving cars. But, the steering value input by the user is true for center image. so, to adjust to this steering value was adjusted for left and right images as they represent an entirely different scenario in terms what the image captures. From the Udacity forum, a best practice value of 0.2 was found to be good, and was used to adjust the steering values for the left(+0.2) and right(-0.2) images.This method makes the data more complete in terms of covering different scenarios at which the car can find itself to be heading out of the track.
-* Further, it is possible during training data collection that, one particular turn (either right or left turn) has more data, because of nature of the track. To compensate for this, I flipped the images horizontally and inverted the steering values, so as to produce artificial data which covers both left and right turn examples.
+* Data was obtained from the simulator, by driving in the simulator to keep the car on the track! During training, the images were recorded with 3 cameras (center, left, and right) similar to exisiting practical self driving cars. But, the steering value input by the user is true for center image. so, to adjust to this steering value was adjusted for left and right images as they represent an entirely different scenario in terms what the image captures. From the Udacity forum, a best practice value of 0.2 was found to be good, and was used to adjust the steering values for the left(+0.2) and right(-0.2) images.This method makes the data more complete in terms of covering different scenarios at which the car can find itself to be heading out of the track. Visually this translates to images and steering angles as show in an example image below.
+
+<img src= "./images/Left_Right_Steer_Adjustment.png"  width="540" align="middle" >
+
+* Further, it is possible during training data collection that, one particular turn (either right or left turn) has more data, because of nature of the track. To compensate for this, I flipped the images horizontally and inverted the steering values, so as to produce artificial data which covers both left and right turn examples. Visually this translates to images and steering angles as show in an example image below.
+
+<img src= "./images/Flip_image_Steer_adjustement.png"  width="540" align="middle" >
+
 
 ####5. Training
 
