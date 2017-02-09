@@ -1,6 +1,8 @@
 
 ![](./images/autonomousSteer.gif "Autonomous Steer")
 
+Full video : [here](https://drive.google.com/file/d/0B2soUU2v1VdlM0R0OUdvYTF3R0k/view?usp=sharing) 
+
 #**Behavioral Cloning Project**
 
 The goals of this project are:
