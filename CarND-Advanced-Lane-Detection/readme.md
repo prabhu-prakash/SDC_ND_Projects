@@ -1,3 +1,6 @@
+
+![](./output_images/project_video_output.gif "Lane Detection")
+
 ## Project Solution Structure
 
 This is the project solution structure I followed.
@@ -12,5 +15,5 @@ The ipython notebook has all the below stages labelled and all intermediate outp
 7. Warp the detected lane boundaries back onto the original image.
 8. Output visual display of the lane boundaries and numerical estimation of lane curvature and vehicle position.
 
-Also, the intermediate outputs can be foud in the output_images directory in the repository.
-The name of the files are self representative and the filenames are numbered to match the sequence of the lane detection pipleline! 
+### Also, the intermediate outputs can be foud in the output_images directory in the repository.
+
