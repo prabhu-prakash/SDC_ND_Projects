@@ -1,6 +1,6 @@
 ###Project Steps
 
-#### These are the steps by which I implemeted by vehicle detection pipeline (using custom built CV features).
+#### These are the steps by which I implemeted my vehicle detection pipeline (using custom built CV features).
 
 1. Choose the feature representation that best serves the purpose of distinguishing between the two classes - cars and not cars - For this, I chose 3 feature representation methods and concatenate all 3 to form a single feature vector.
   * Spatial arrangement of color in the image - HSV color space
