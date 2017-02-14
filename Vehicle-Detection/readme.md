@@ -1,3 +1,16 @@
+<table style="width:100%">
+  <tr>
+    <th>boundingBox Raw</th>
+    <th>final ouput </th>
+  </tr>
+  <tr>
+    <td><img src= "./output_images_from_pipeline/bounding_boxes_raw.gif" ></td>
+    <td><img src= "./output_images_from_pipeline/project_video_output.gif" ></td>
+  </tr>
+</table>
+
+
+
 ###Project Steps
 
 #### These are the steps by which I implemeted my vehicle detection pipeline (using custom built CV features).
